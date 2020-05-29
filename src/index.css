@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredoka+One&family=Julius+Sans+One&family=Poiret+One&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
