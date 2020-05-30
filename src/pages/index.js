@@ -1,9 +1,11 @@
 import React from "react"
-import Layout from '../components/layout'
+import styled from 'styled-components'
+import Home from '../components/home'
 import '../index.css';
 
+
 export default () => (
-  <Layout>
-      <h2>HELLO WORLD</h2>
-  </Layout>
+  <>
+    <Home/>
+  </>
 )
