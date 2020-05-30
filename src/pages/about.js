@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 export default () => (
   <div style={{ color: `teal` }}>
-    <Header headerText="About Gatsby" />
+    <Header />
     <Link to="/">Home</Link>
     <p>Such wow. Very React.</p>
   </div>

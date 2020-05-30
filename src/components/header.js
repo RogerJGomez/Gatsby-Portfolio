@@ -2,34 +2,25 @@ import React from "react"
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const HeaderText = styled.h3`
-    color:purple;
-    font-size:1.7rem;
-`
 const Header = styled.div`
-    padding: 0.1rem 1rem;
-    background-color: grey;
-    position:sticky;
-    margin:0;
+    padding: 1.5rem;
+    background:transparent;
+
+`
+
+const NavBar = styled.nav `
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
-    align-items:center
+    justify-content:flex-end;
+    align-items:center;
 `
 
-const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-      <Link to={props.to}>{props.children}</Link>
-    </li>
-)
-
-export default ({ headerText }) => (
+export default () => (
     <Header>
-        <HeaderText>{headerText}</HeaderText>
-        <ul style={{ listStyle: `none` }}>
-            <ListLink to="/">Home</ListLink>
-            <ListLink to="/about/">About</ListLink>
-            <ListLink to="/contact/">Contact</ListLink>
-        </ul>
+        <NavBar>
+            <Link style={{marginRight:"1rem"}} to="/">Home</Link>
+            <Link style={{marginRight:"1rem"}} to="/about">About</Link>
+            <Link style={{marginRight:"1rem"}} to="/contact">Contact</Link>
+        </NavBar>
     </Header>
 )
