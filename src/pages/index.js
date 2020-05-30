@@ -1,11 +1,17 @@
 import React from "react"
-import styled from 'styled-components'
 import Home from '../components/home'
-import '../index.css';
+import About from '../components/about'
+import { ThemeProvider } from 'styled-components'
+import '../index.css'
 
+const theme = {
+  primary: '#23FEB2',
+  secondary:'#0a192f'
+}
 
 export default () => (
-  <>
+  <ThemeProvider theme = {theme}>
     <Home/>
-  </>
+    <About/>
+  </ThemeProvider>
 )

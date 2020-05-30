@@ -59,25 +59,42 @@ const particlesParams = {
     z-index: -1;
     position:absolute;
     width:100%;
-    height:100vh;
+    height:100%;
   `
 const Title = styled.h1`
     font-size:70px;
     text-align:center;
     padding-top:30vh;
+    line-height:25px;
+
+    @media(max-width:768px){
+        line-height:80px;
+    }
 `
 const Subtitle = styled.h2`
     font-size:35px;
     text-align:center;
-    color:#23FEB2;
+    color:${props => props.theme.primary};
+    line-height:25px;
+`
+const Skills = styled.h2`
+    font-size:25px;
+    text-align:center;
+    line-height:25px;
 `
 
+const Container = styled.div`
+    height:100vh;
+`
+
+
 export default () => ( 
-    <>
+    <Container>
         <ParticlesDiv><Particles height="100vh" params={particlesParams} /></ParticlesDiv> 
         <Title>
             Roger Gómez
         </Title>
         <Subtitle>Front-End Developer</Subtitle>
-    </>
+        < Skills>React | HTML | SCSS | Redux</Skills>
+    </Container>
   )
