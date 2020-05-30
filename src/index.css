@@ -36,5 +36,10 @@ a {
 }
 
 a:hover {
-    color:#23FEB2
+    color:#23FEB2;
+    cursor: pointer;
+}
+
+.none {
+    display: none
 }

@@ -101,9 +101,11 @@ const Arrow = styled.a`
     width:0;
     animation: downarrow 0.6s infinite alternate ease-in-out;
     border-top:1.5rem solid white;
+    transition: 0.3s;
     
     &:hover {
         cursor:pointer;
+        border-top:1.5rem solid ${props => props.theme.primary};
     }
 `
 

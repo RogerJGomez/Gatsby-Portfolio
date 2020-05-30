@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Home from '../components/home'
 import About from '../components/about'
 import Projects from '../components/projects'
@@ -13,6 +14,9 @@ const theme = {
 
 export default () => (
   <ThemeProvider theme = {theme}>
+    <Helmet>
+      <title>Roger Gómez | Front-End Developer</title>
+    </Helmet>
     <Home/>
     <About/>
     <Projects/>
