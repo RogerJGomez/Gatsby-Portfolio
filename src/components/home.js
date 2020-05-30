@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Particles from 'react-particles-js'
 
 const particlesParams = {
-
     "particles": {
         "number": {
             "value": 160,
@@ -53,9 +52,9 @@ const particlesParams = {
             }
         }
     }
-  }
+}
   
-  const ParticlesDiv = styled.div`
+const ParticlesDiv = styled.div`
     z-index: -1;
     position:absolute;
     width:100%;
@@ -82,19 +81,40 @@ const Skills = styled.h2`
     text-align:center;
     line-height:25px;
 `
-
 const Container = styled.div`
     height:100vh;
 `
-
+const Arrow = styled.a`
+    @keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4 }
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
+    }
+    border-color:transparent;
+    border-style:solid;
+    border-width:0 1.5rem;
+    display:block;
+    height:0;
+    margin:5rem auto;
+    opacity:0.4;
+    text-indent:-9999px;
+    transform-origin: 50% 50%;
+    width:0;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    border-top:1.5rem solid white;
+    
+    &:hover {
+        cursor:pointer;
+    }
+`
 
 export default () => ( 
-    <Container>
+    <Container id="home">
         <ParticlesDiv><Particles height="100vh" params={particlesParams} /></ParticlesDiv> 
         <Title>
             Roger Gómez
         </Title>
         <Subtitle>Front-End Developer</Subtitle>
         < Skills>React | HTML | SCSS | Redux</Skills>
+        <Arrow href="#about" />
     </Container>
   )

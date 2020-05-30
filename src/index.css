@@ -4,6 +4,10 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin:0;
     font-family: 'Comfortaa', cursive;
@@ -22,6 +26,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #23FEB2;
+    border-radius: 20px;
 }
 
 a {
