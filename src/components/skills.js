@@ -26,13 +26,15 @@ const Line = styled.hr`
         margin-bottom:3rem;
     }
 `
-
 const Wrapper = styled.div`
     width: 20%;
-    padding: 1.5rem;
     text-align:center;
+    @media(min-width:1200px){
+        padding: 1.5rem;
+    }
     @media(max-width:768px){
         width:90%;
+        padding: 1.5rem;
     }
 `
 const TechName = styled.h3`

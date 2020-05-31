@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import Home from '../components/home'
 import About from '../components/about'
 import Skills from '../components/skills'
+import Contact from '../components/contact'
 import Projects from '../components/projects'
 import BackTop from '../components/topScrollAnchor'
 import { ThemeProvider } from 'styled-components'
@@ -22,6 +23,7 @@ export default () => (
     <About/>
     <Projects/>
     <Skills/>
+    <Contact/>
     <BackTop/>
   </ThemeProvider>
 )
