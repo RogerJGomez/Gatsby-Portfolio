@@ -7,7 +7,6 @@ import Contact from '../components/contact'
 import Projects from '../components/projects'
 import BackTop from '../components/topScrollAnchor'
 import { ThemeProvider } from 'styled-components'
-import { Lines } from 'react-preloaders'
 
 import '../index.css'
 
@@ -17,8 +16,6 @@ const theme = {
 }
 
 const Index = () =>  {
-
-  const [loading, setImgLoaded] = useState(true);
 
   return(
     <ThemeProvider theme = {theme}>
@@ -31,7 +28,6 @@ const Index = () =>  {
       <Skills/>
       <Contact/>
       <BackTop/>
-      <Lines color={'#23FEB2'} background="#0a192f" customLoading={loading} />
     </ThemeProvider>
   )
 }
