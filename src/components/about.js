@@ -1,20 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
-import Grid from './styles/Grid' 
+import Grid from './styles/Grid'
+import Container from './styles/Container' 
+import Title from './styles/Title'
 
-const Container = styled.div`
-    margin: 2rem 10%;
-`
-const Title = styled.h1`
-    padding-left:2.5rem;
-    font-size:2.2rem;
-    margin-top:1.5rem;
-    margin-bottom:0;
-    @media(max-width:768px){
-        text-align:center;
-        padding:0;
-    }
-`
 const Line = styled.hr`
     margin:0 2.5rem;
     margin-bottom: 2.5rem;

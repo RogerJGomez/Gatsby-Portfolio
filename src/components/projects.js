@@ -2,22 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { loadCSS } from 'fg-loadcss'
 import styled from 'styled-components'
 import Grid from './styles/Grid'
-import ScaleLoader from "react-spinners/ScaleLoader";
+import Container from './styles/Container'
+import Title from './styles/Title'
+import ScaleLoader from "react-spinners/ScaleLoader"
 import Projects from '../projectsData'
 
-const Container = styled.div`
-    margin: 7rem 10%;
-`
-const Title = styled.h1`
-    padding-left:2.5rem;
-    font-size:2.2rem;
-    margin-top:1.5rem;
-    margin-bottom:0;
-    @media(max-width:768px){
-        text-align:center;
-        padding:0;
-    }
-`
 const Line = styled.hr`
     margin:0 2.5rem;
     margin-bottom: 4.5rem;
@@ -26,7 +15,7 @@ const Line = styled.hr`
     border-top: 4px solid ${props => props.theme.primary};
     border-radius:10px;
     @media(max-width:768px){
-        width:55%;
+        width:45%;
         margin:0 auto;
         margin-bottom:3rem;
     }
@@ -99,12 +88,6 @@ const Content = () => {
         : currentItem===Projects.length-1 ? setCurrentItem(0) : setCurrentItem((currentItem+1))
     }
 
-    const handleClick = (e) => {
-        if (e.keyCode === 37) changeProject('left'); 
-        if (e.keyCode === 39) changeProject('right'); 
-    }
-
-
     useEffect(() => {
         loadCSS(
           'https://use.fontawesome.com/releases/v5.12.0/css/all.css',
@@ -126,7 +109,7 @@ const Content = () => {
             <TextSection>
                 <ProjectTitle>{Projects[currentItem].name}</ProjectTitle> 
                 <ProjectText>{Projects[currentItem].description}</ProjectText>
-                <Technologies>React | Bootstrap | SCSS</Technologies>
+                <Technologies>{Projects[currentItem].techs}</Technologies>
                 <LinksSection>
                     <Links href={Projects[currentItem].links[0]}><Icon className="fab fa-github"/></Links>
                     <Links href={Projects[currentItem].links[1]}><Icon className="fa fa-external-link-alt"/></Links>
@@ -134,8 +117,8 @@ const Content = () => {
             </TextSection>
             </Grid>
             <ArrowsGrid>
-                <ArrowButtons onClick={() => changeProject('left')} onKeyDown={handleClick}><Icon className="fa fa-arrow-left"></Icon></ArrowButtons>
-                <ArrowButtons onClick={() => changeProject('right')} onKeyDown={handleClick}><Icon className="fa fa-arrow-right"></Icon></ArrowButtons>
+                <ArrowButtons onClick={() => changeProject('left')}><Icon className="fa fa-arrow-left"></Icon></ArrowButtons>
+                <ArrowButtons onClick={() => changeProject('right')}><Icon className="fa fa-arrow-right"></Icon></ArrowButtons>
             </ArrowsGrid>
         </Container>
     )
