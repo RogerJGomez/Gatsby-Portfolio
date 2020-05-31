@@ -34,7 +34,7 @@ const TextDiv = styled.div`
     padding:1% 3%;
     width:80%;
     @media(max-width:768px){
-        width:90%
+        width:95%
     }
 `
 const AboutText = styled.p`

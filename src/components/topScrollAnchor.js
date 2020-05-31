@@ -23,6 +23,9 @@ const BackTop = styled.a`
     width:0;
     animation: uparrow 0.6s infinite alternate ease-in-out;
     border-bottom:1.5rem solid ${props => props.theme.primary};
+    @media(max-width:768px){
+        display:none;
+    }
 `
 
 export default () => ( 

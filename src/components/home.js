@@ -75,6 +75,9 @@ const Subtitle = styled.h2`
     text-align:center;
     color:${props => props.theme.primary};
     line-height:25px;
+    @media(max-width:768px){
+        line-height: 45px;
+    }
 `
 const Skills = styled.h2`
     font-size:25px;
@@ -83,6 +86,9 @@ const Skills = styled.h2`
 `
 const Container = styled.div`
     height:100vh;
+    @media(max-width:768px){
+        width:100%;
+    }
 `
 const Arrow = styled.a`
     @keyframes downarrow {

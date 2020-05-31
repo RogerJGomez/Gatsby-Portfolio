@@ -24,13 +24,16 @@ const TextSection = styled.div`
     width:40%;
     padding:2%;
     @media(max-width:768px){
-        width:90%;
+        width:100%;
     }
 `
 const ProjectTitle = styled.h2`
     text-align:right;
     font-size:2.2rem;
     color: ${props => props.theme.primary};
+    @media(max-width:768px){
+        text-align:center;
+    }
 `
 const ProjectText = styled.p`
     text-align:justify;

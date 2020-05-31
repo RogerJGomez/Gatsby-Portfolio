@@ -33,8 +33,8 @@ const Wrapper = styled.div`
         padding: 1.5rem;
     }
     @media(max-width:768px){
-        width:90%;
-        padding: 1.5rem;
+        width:100%;
+        padding: 1.5rem 0;
     }
 `
 const TechName = styled.h3`
