@@ -7,7 +7,6 @@ import Contact from '../components/contact'
 import Projects from '../components/projects'
 import BackTop from '../components/topScrollAnchor'
 import { ThemeProvider } from 'styled-components'
-
 import '../index.css'
 
 const theme = {
@@ -16,7 +15,6 @@ const theme = {
 }
 
 const Index = () =>  {
-
   return(
     <ThemeProvider theme = {theme}>
       <Helmet>

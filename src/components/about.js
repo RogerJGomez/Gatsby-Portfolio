@@ -47,7 +47,7 @@ export default () => (
     <Title>About Me</Title>
     <Line />
     <Grid>
-        <ImageSection><Avatar src ="https://rogergomez.netlify.app/cartoon-rg.png" alt="avatar"/></ImageSection>
+        <ImageSection><Avatar src ="/cartoon-rg.png" alt="avatar"/></ImageSection>
         <TextDiv>
             <AboutText>Front-end developer from Venezuela. Currently working at an Argentinian marketing agency, Clichead, where I'm in charge of developing and maintaining dozens of websites built with WordPress, for small and medium sized businesses based all over the world.</AboutText>
             <AboutText>I'm an avid tech enthusiast, trying to keep in touch with current and emerging technologies and aiming to learn and improve my skills every day.</AboutText>
