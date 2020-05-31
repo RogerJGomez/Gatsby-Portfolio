@@ -68,7 +68,7 @@ const Title = styled.h1`
 
     @media(max-width:768px){
         line-height:80px;
-        padding-top:4rem;
+        padding-top:1.5rem;
     }
 `
 const Subtitle = styled.h2`
