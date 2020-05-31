@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 import Home from '../components/home'
 import About from '../components/about'
@@ -7,6 +7,8 @@ import Contact from '../components/contact'
 import Projects from '../components/projects'
 import BackTop from '../components/topScrollAnchor'
 import { ThemeProvider } from 'styled-components'
+import { Lines } from 'react-preloaders'
+
 import '../index.css'
 
 const theme = {
@@ -14,16 +16,24 @@ const theme = {
   secondary:'#0a192f'
 }
 
-export default () => (
-  <ThemeProvider theme = {theme}>
-    <Helmet>
-      <title>Roger Gómez | Front-End Developer</title>
-    </Helmet>
-    <Home/>
-    <About/>
-    <Projects/>
-    <Skills/>
-    <Contact/>
-    <BackTop/>
-  </ThemeProvider>
-)
+const Index = () =>  {
+
+  const [loading, setImgLoaded] = useState(true);
+
+  return(
+    <ThemeProvider theme = {theme}>
+      <Helmet>
+        <title>Roger Gómez | Front-End Developer</title>
+      </Helmet>
+      <Home/>
+      <About/>
+      <Projects setPreloader={setImgLoaded}/>
+      <Skills/>
+      <Contact/>
+      <BackTop/>
+      <Lines color={'#23FEB2'} background="#0a192f" customLoading={loading} />
+    </ThemeProvider>
+  )
+}
+
+export default Index

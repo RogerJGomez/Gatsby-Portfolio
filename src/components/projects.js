@@ -79,7 +79,7 @@ const ArrowButtons = styled.div`
         color:${props => props.theme.primary};
     }
 `
-const Content = () => {
+const Content = ({ setPreloader }) => {
 
     const [loading, setImgLoaded] = useState(true);
     const [currentItem, setCurrentItem] = useState(0);
@@ -103,7 +103,7 @@ const Content = () => {
             <Title>Projects</Title>
             <Line />
             <Grid>
-            <ImageSection><Image draggable={false} src={`/${Projects[currentItem].id}.jpg`} className={loading? 'none' : 'block'}alt="projects" onLoad={() => {setImgLoaded(false)}}/>      
+            <ImageSection><Image draggable={false} src={`/${Projects[currentItem].id}.jpg`} className={loading? 'none' : 'block'}alt="projects" onLoad={() => {setImgLoaded(false); setPreloader(false)}}/>      
             <ScaleLoader
             size={120}
             color={"#23FEB2"}
