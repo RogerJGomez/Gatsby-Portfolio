@@ -24,7 +24,7 @@ const Index = () =>  {
       </Helmet>
       <Home/>
       <About/>
-      <Projects setPreloader={setImgLoaded}/>
+      <Projects/>
       <Skills/>
       <Contact/>
       <BackTop/>
