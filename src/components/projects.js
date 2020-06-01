@@ -15,7 +15,7 @@ const Line = styled.hr`
     border-top: 4px solid ${props => props.theme.primary};
     border-radius:10px;
     @media(max-width:768px){
-        width:45%;
+        width:50%;
         margin:0 auto;
         margin-bottom:3rem;
     }
@@ -51,7 +51,7 @@ const ImageSection = styled.div`
     width:60%;
     text-align:center;
     @media(max-width:768px){
-        width:90%
+        width:100%
     }
 `
 const Image = styled.img`

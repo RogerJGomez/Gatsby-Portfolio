@@ -12,9 +12,9 @@ const Line = styled.hr`
     border-top: 4px solid ${props => props.theme.primary};
     border-radius:10px;
     @media(max-width:768px){
-        width:55%;
+        width:60%;
         margin:0 auto;
-        margin-bottom:1rem;
+        margin-bottom:2rem;
     }
 `
 const ImageSection = styled.div`
@@ -24,7 +24,7 @@ const ImageSection = styled.div`
     width:20%;
     text-align:center;
     @media(max-width:768px){
-        width:50%
+        width:65%
     }
 `
 const Avatar = styled.img`

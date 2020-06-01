@@ -17,7 +17,8 @@ const theme = {
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Comfortaa';
-    src: url('/comfortaa.ttf') format('ttf');
+    src: url('/comfortaa.ttf') format('ttf'),
+    url('/comfortaa.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
   }

@@ -17,7 +17,7 @@ const Line = styled.hr`
     border-top: 4px solid ${props => props.theme.primary};
     border-radius:10px;
     @media(max-width:768px){
-        width:65%;
+        width:70%;
         margin:0 auto;
         margin-bottom:3rem;
     }
