@@ -27,7 +27,13 @@ const BackTop = styled.a`
         left:80%;
     }
 `
+const scrollTo = target => {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+};
 
 export default () => ( 
-    <BackTop href="#home"/>
+    <BackTop onClick={()=> scrollTo(document.getElementById('home'))}/>
 )

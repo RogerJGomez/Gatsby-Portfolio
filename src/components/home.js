@@ -115,6 +115,12 @@ const Arrow = styled.a`
         border-top:1.5rem solid ${props => props.theme.primary};
     }
 `
+const scrollTo = target => {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+};
 
 export default () => ( 
     <Container id="home">
@@ -124,6 +130,6 @@ export default () => (
         </Title>
         <Subtitle>Front-End Developer</Subtitle>
         < Skills>React | HTML | SCSS | Redux</Skills>
-        <Arrow href="#about" />
+        <Arrow onClick={()=> scrollTo(document.getElementById('about'))}/>
     </Container>
   )
