@@ -114,8 +114,8 @@ const Content = () => {
                 <ProjectText>{Projects[currentItem].description}</ProjectText>
                 <Technologies>{Projects[currentItem].techs}</Technologies>
                 <LinksSection>
-                    <Links href={Projects[currentItem].links[0]}><Icon className="fab fa-github"/></Links>
-                    <Links href={Projects[currentItem].links[1]}><Icon className="fa fa-external-link-alt"/></Links>
+                    <Links target="_blank" rel="noopener noreferrer" href={Projects[currentItem].links[0]}><Icon className="fab fa-github"/></Links>
+                    <Links target="_blank" rel="noopener noreferrer" href={Projects[currentItem].links[1]}><Icon className="fa fa-external-link-alt"/></Links>
                 </LinksSection>
             </TextSection>
             </Grid>
