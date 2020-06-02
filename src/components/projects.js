@@ -4,16 +4,14 @@ import styled from 'styled-components'
 import Grid from './styles/Grid'
 import Container from './styles/Container'
 import Title from './styles/Title'
+import UnderLine from './styles/UnderLine'
 import ScaleLoader from "react-spinners/ScaleLoader"
 import Projects from '../projectsData'
 
-const Line = styled.hr`
+const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 4.5rem;
     width:12.5%;
-    border: ${props => props.theme.primary};
-    border-top: 4px solid ${props => props.theme.primary};
-    border-radius:10px;
     @media(max-width:768px){
         width:50%;
         margin:0 auto;

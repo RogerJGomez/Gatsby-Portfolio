@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import Grid from './styles/Grid'
 import Container from './styles/Container' 
 import Title from './styles/Title'
+import UnderLine from './styles/UnderLine'
 
-const Line = styled.hr`
+const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 2.5rem;
     width:15%;
-    border: ${props => props.theme.primary};
-    border-top: 4px solid ${props => props.theme.primary};
-    border-radius:10px;
     @media(max-width:768px){
         width:60%;
         margin:0 auto;

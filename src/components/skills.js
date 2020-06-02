@@ -2,6 +2,7 @@ import React from 'react'
 import Grid from './styles/Grid'
 import Container from './styles/Container'
 import Title from './styles/Title'
+import UnderLine from './styles/UnderLine'
 import styled from 'styled-components'
 import { Icon } from '@iconify/react'
 import html5Icon from '@iconify/icons-simple-icons/html5'
@@ -13,13 +14,45 @@ import reactIcon from '@iconify/icons-simple-icons/react'
 import reduxIcon from '@iconify/icons-simple-icons/redux'
 import nodeDotJs from '@iconify/icons-simple-icons/node-dot-js'
 
-const Line = styled.hr`
+const skillsList = [
+    {
+        name:'HTML',
+        icon:html5Icon
+    },
+    {
+        name:'CSS',
+        icon:css3Icon
+    },
+    {
+        name:'SCSS',
+        icon:sassIcon
+    },
+    {
+        name:'JavaScript',
+        icon:javascriptIcon
+    },
+    {
+        name:'React',
+        icon:reactIcon
+    },
+    {
+        name:'Redux',
+        icon:reduxIcon
+    },
+    {
+        name:'Node.js',
+        icon:nodeDotJs
+    },
+    {
+        name:'Styled Components',
+        icon:styledComponents
+    }
+]
+
+const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 4.5rem;
     width:8%;
-    border: ${props => props.theme.primary};
-    border-top: 4px solid ${props => props.theme.primary};
-    border-radius:10px;
     @media(max-width:768px){
         width:30%;
         margin:0 auto;
@@ -41,43 +74,25 @@ const TechName = styled.h3`
     font-size:1.2rem;
     text-align:center;
 `
+const Skills = () => {
+    return (
+        <>
+        {skillsList.map(skill => (
+            <Wrapper key={skill.name}>
+                <Icon icon={skill.icon} width="100" height="100" style={{color:'#23FEB2'}}/>
+                <TechName>{skill.name}</TechName>
+            </Wrapper>
+        ))}
+        </>
+    )
+}
+
 export default () => ( 
     <Container >
         <Title>Skills</Title>
         <Line />
         <Grid style={{flexWrap:'wrap'}}>
-            <Wrapper>
-                <Icon icon={html5Icon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>HTML</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={css3Icon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>CSS</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={sassIcon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>SCSS</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={javascriptIcon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>JavaScript</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={reactIcon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>React</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={reduxIcon} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>Redux</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={nodeDotJs} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>Node.js</TechName>
-            </Wrapper>
-            <Wrapper>
-                <Icon icon={styledComponents} width="100" height="100" style={{color:'#23FEB2'}}/>
-                <TechName>Styled Components</TechName>
-            </Wrapper>
+            <Skills />
         </Grid>
     </Container>
   )
