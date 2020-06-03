@@ -22,7 +22,8 @@ const ImageSection = styled.div`
     width:20%;
     text-align:center;
     @media(max-width:768px){
-        width:65%
+        width:65%;
+        margin:0 auto;
     }
 `
 const Avatar = styled.img`

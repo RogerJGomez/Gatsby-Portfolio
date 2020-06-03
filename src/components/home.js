@@ -57,6 +57,7 @@ const particlesParams = {
 const ParticlesDiv = styled.div`
     z-index: -1;
     position:absolute;
+    top:0;
     width:100%;
     height:100%;
   `
@@ -67,6 +68,7 @@ const Title = styled.h1`
     line-height:25px;
 
     @media(max-width:768px){
+        font-size:65px;
         line-height:80px;
         padding-top:20%;
     }
