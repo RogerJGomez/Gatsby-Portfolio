@@ -8,9 +8,8 @@ import UnderLine from './styles/UnderLine'
 const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 2.5rem;
-    width:15%;
+    width:185px;
     @media(max-width:768px){
-        width:60%;
         margin:0 auto;
         margin-bottom:2rem;
     }

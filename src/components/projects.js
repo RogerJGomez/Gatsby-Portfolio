@@ -11,9 +11,8 @@ import Projects from '../projectsData'
 const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 4.5rem;
-    width:12.5%;
+    width:150px;
     @media(max-width:768px){
-        width:50%;
         margin:0 auto;
         margin-bottom:3rem;
     }

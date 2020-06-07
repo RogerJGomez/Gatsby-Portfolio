@@ -36,9 +36,8 @@ const contactData = [
 const Line = styled(UnderLine)`
     margin:0 2.5rem;
     margin-bottom: 4.5rem;
-    width:18%;
+    width:220px;
     @media(max-width:768px){
-        width:70%;
         margin:0 auto;
         margin-bottom:3rem;
     }
