@@ -2,6 +2,7 @@ import React from "react"
 import Grid from "./styles/Grid"
 import Container from "./styles/Container"
 import Title from "./styles/Title"
+import Wrapper from "./styles/Wrapper"
 import UnderLine from "./styles/UnderLine"
 import styled from "styled-components"
 import { Icon } from "@iconify/react"
@@ -56,17 +57,6 @@ const Line = styled(UnderLine)`
   @media (max-width: 768px) {
     margin: 0 auto;
     margin-bottom: 3rem;
-  }
-`
-const Wrapper = styled.div`
-  width: 20%;
-  text-align: center;
-  @media (min-width: 1200px) {
-    padding: 1.5rem;
-  }
-  @media (max-width: 768px) {
-    width: 50%;
-    padding: 1.5rem 0;
   }
 `
 const TechName = styled.h3`
