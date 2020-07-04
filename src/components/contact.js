@@ -43,6 +43,12 @@ const Line = styled(UnderLine)`
     margin-bottom: 3rem;
   }
 `
+const SkillIcon = styled(Icon)`
+  transition: 0.8s;
+  &:hover {
+    color: #fff !important;
+  }
+`
 const Name = styled.h3`
   font-size: 1.2rem;
   text-align: center;
@@ -61,10 +67,10 @@ const Contact = () => {
       {contactData.map(data => (
         <Wrapper key={data.name}>
           <Link href={data.url}>
-            <Icon
+            <SkillIcon
               icon={data.icon}
-              width="100"
-              height="100"
+              width="90"
+              height="90"
               style={{ color: "#23FEB2" }}
             />
           </Link>

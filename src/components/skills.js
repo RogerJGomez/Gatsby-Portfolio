@@ -49,7 +49,12 @@ const skillsList = [
     icon: styledComponents,
   },
 ]
-
+const SkillIcon = styled(Icon)`
+  transition: 0.7s;
+  &:hover {
+    color: #fff !important;
+  }
+`
 const Line = styled(UnderLine)`
   margin: 0 2.5rem;
   margin-bottom: 4.5rem;
@@ -68,7 +73,7 @@ const Skills = () => {
     <>
       {skillsList.map(skill => (
         <Wrapper key={skill.name}>
-          <Icon
+          <SkillIcon
             icon={skill.icon}
             width="100"
             height="100"
