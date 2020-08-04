@@ -11,6 +11,17 @@ const Data = [
     techs: "React | Bootstrap | SCSS",
   },
   {
+    id: "rickandmorty",
+    name: "Rick and Morty App",
+    description: `Info page about Adult Swim's show Rick and Morty, 
+    you can search for your favorite characters or find information about locations and episodes.`,
+    links: [
+      "https://github.com/RogerJGomez/Rick-and-Morty-App",
+      "https://rick-and-morty-info.netlify.app/",
+    ],
+    techs: "React | Styled Components | GraphQL | Material-UI",
+  },
+  {
     id: "gamingstore",
     name: "Gaming Store App",
     description: `Create a shopping cart from a list of products in the store, 

@@ -14,6 +14,8 @@ import styledComponents from "@iconify/icons-simple-icons/styled-components"
 import reactIcon from "@iconify/icons-simple-icons/react"
 import reduxIcon from "@iconify/icons-simple-icons/redux"
 import nodeDotJs from "@iconify/icons-simple-icons/node-dot-js"
+import graphqlIcon from "@iconify/icons-simple-icons/graphql"
+import materialUi from "@iconify/icons-simple-icons/material-ui"
 
 const skillsList = [
   {
@@ -48,6 +50,14 @@ const skillsList = [
     name: "Styled Components",
     icon: styledComponents,
   },
+  {
+    name: "Material-UI",
+    icon: materialUi,
+  },
+  {
+    name: "GraphQL",
+    icon: graphqlIcon,
+  },
 ]
 const SkillIcon = styled(Icon)`
   transition: 0.7s;
@@ -68,11 +78,14 @@ const TechName = styled.h3`
   font-size: 1.2rem;
   text-align: center;
 `
+const SkillWrapper = styled(Wrapper)`
+  width: 20%;
+`
 const Skills = () => {
   return (
     <>
       {skillsList.map(skill => (
-        <Wrapper key={skill.name}>
+        <SkillWrapper key={skill.name}>
           <SkillIcon
             icon={skill.icon}
             width="100"
@@ -80,7 +93,7 @@ const Skills = () => {
             style={{ color: "#23FEB2" }}
           />
           <TechName>{skill.name}</TechName>
-        </Wrapper>
+        </SkillWrapper>
       ))}
     </>
   )

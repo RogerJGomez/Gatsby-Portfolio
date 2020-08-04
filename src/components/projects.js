@@ -19,9 +19,10 @@ const Line = styled(UnderLine)`
 `
 const TextSection = styled.div`
   width: 40%;
-  padding: 2%;
+  padding: 2% 0 2% 2%;
   @media (max-width: 768px) {
     width: 100%;
+    padding: 0;
   }
 `
 const ProjectTitle = styled.h2`
