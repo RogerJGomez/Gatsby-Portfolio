@@ -28,7 +28,7 @@ const Data = [
         you can keep track of the quantity of items and total amount of the order.`,
     links: [
       "https://github.com/RogerJGomez/gaming-store-app",
-      "https://github.com/RogerJGomez/gaming-store-app",
+      "https://gaming-store-app.vercel.app/",
     ],
     techs: "React | Redux | Reactstrap",
   },
