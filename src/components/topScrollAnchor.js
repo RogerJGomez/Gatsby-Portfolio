@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const BackTop = styled.a`
   position: relative;
+  padding: 1.3rem 0;
   top: 95%;
   left: 95%;
   z-index: 99;
