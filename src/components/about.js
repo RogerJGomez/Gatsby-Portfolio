@@ -15,11 +15,14 @@ const Line = styled(UnderLine)`
   }
 `
 const ImageSection = styled.div`
-  border: 3px solid ${props => props.theme.primary};
+  border: 4px solid ${props => props.theme.primary};
   margin: 1rem;
   border-radius: 50%;
   width: 20%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 768px) {
     width: 65%;
     margin: 0 auto;
@@ -28,6 +31,7 @@ const ImageSection = styled.div`
 const Avatar = styled.img`
   height: 100%;
   width: 100%;
+  border-radius: 50%;
 `
 const TextDiv = styled.div`
   padding: 1% 3%;
@@ -46,7 +50,7 @@ export default () => (
     <Line />
     <Grid>
       <ImageSection>
-        <Avatar draggable={false} src="/cartoon-rg.png" alt="avatar" />
+        <Avatar draggable={false} src="/rg.jpg" alt="avatar" />
       </ImageSection>
       <TextDiv>
         <AboutText>
