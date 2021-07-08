@@ -2,14 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const BackTop = styled.a`
-  position: relative;
-  padding: 1.3rem 0;
-  top: 95%;
-  left: 95%;
-  z-index: 99;
-  color: white;
   cursor: pointer;
-  font-size: 18px;
+  display: flex;
+  align-items: center;
   @keyframes uparrow {
     0% {
       -webkit-transform: translateY(0);
@@ -23,15 +18,16 @@ const BackTop = styled.a`
   border-color: transparent;
   border-style: solid;
   border-width: 0 1.5rem;
-  opacity: 0.4;
-  height: 0;
-  text-indent: -9999px;
-  transform-origin: 50% 50%;
-  width: 0;
-  animation: uparrow 0.6s infinite alternate ease-in-out;
+  animation: uparrow 0.8s infinite alternate ease-in-out;
   border-bottom: 1.5rem solid ${props => props.theme.primary};
+`
+const BackTopContainer = styled.div`
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2% 0;
   @media (max-width: 768px) {
-    left: 80%;
+    padding-bottom: 10%;
   }
 `
 const scrollTo = target => {
@@ -42,5 +38,7 @@ const scrollTo = target => {
 }
 
 export default () => (
-  <BackTop onClick={() => scrollTo(document.getElementById("home"))} />
+  <BackTopContainer>
+    <BackTop onClick={() => scrollTo(document.getElementById("home"))} />
+  </BackTopContainer>
 )

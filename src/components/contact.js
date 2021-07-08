@@ -11,16 +11,17 @@ import contactData from "./contactIcons"
 const Line = styled(UnderLine)`
   margin: 0 2.5rem;
   margin-bottom: 4.5rem;
-  width: 220px;
+  width: 155px;
   @media (max-width: 768px) {
     margin: 0 auto;
     margin-bottom: 3rem;
   }
 `
 const SkillIcon = styled(Icon)`
+  color: ${props => props.theme.primary};
   transition: 0.8s;
   &:hover {
-    color: #fff !important;
+    color: #fff;
   }
 `
 const Name = styled.h3`
@@ -34,6 +35,9 @@ const Link = styled.a`
 `
 const FixedContainer = styled(Container)`
   margin-bottom: 4rem;
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `
 const Contact = () => {
   return (
@@ -57,7 +61,7 @@ const Contact = () => {
 
 export default () => (
   <FixedContainer>
-    <Title>Contact Me</Title>
+    <Title>Contact</Title>
     <Line />
     <Grid>
       <Contact />

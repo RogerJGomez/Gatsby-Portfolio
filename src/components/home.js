@@ -15,11 +15,10 @@ const Title = styled.h1`
   text-align: center;
   padding-top: 30vh;
   line-height: 25px;
-
   @media (max-width: 768px) {
-    font-size: 65px;
-    line-height: 80px;
-    padding-top: 20%;
+    font-size: 60px;
+    line-height: 70px;
+    padding-top: 30%;
   }
 `
 const Subtitle = styled.h2`
@@ -29,12 +28,16 @@ const Subtitle = styled.h2`
   line-height: 25px;
   @media (max-width: 768px) {
     line-height: 45px;
+    font-size: 30px;
   }
 `
 const Skills = styled.h2`
   font-size: 25px;
   text-align: center;
   line-height: 25px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 const Container = styled.div`
   height: 100vh;
@@ -60,15 +63,12 @@ const Arrow = styled.a`
   height: 0;
   margin: 5rem auto;
   opacity: 0.4;
-  text-indent: -9999px;
-  transform-origin: 50% 50%;
   width: 0;
   animation: downarrow 0.6s infinite alternate ease-in-out;
   border-top: 1.5rem solid white;
   transition: 0.3s;
-
+  cursor: pointer;
   &:hover {
-    cursor: pointer;
     border-top: 1.5rem solid ${props => props.theme.primary};
   }
 `

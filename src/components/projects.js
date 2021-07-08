@@ -35,6 +35,7 @@ const ProjectTitle = styled.h2`
 `
 const ProjectText = styled.p`
   text-align: justify;
+  line-height: 1.5rem;
 `
 const Technologies = styled.p`
   text-align: right;
@@ -68,6 +69,9 @@ const ArrowsGrid = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `
 const ArrowButtons = styled.div`
   transition: 0.3s;

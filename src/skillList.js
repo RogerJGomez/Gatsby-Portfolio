@@ -6,8 +6,8 @@ import styledComponents from "@iconify/icons-simple-icons/styled-components"
 import reactIcon from "@iconify/icons-simple-icons/react"
 import reduxIcon from "@iconify/icons-simple-icons/redux"
 import nodeDotJs from "@iconify/icons-simple-icons/node-dot-js"
-import graphqlIcon from "@iconify/icons-simple-icons/graphql"
-import materialUi from "@iconify/icons-simple-icons/material-ui"
+import typescriptIcon from "@iconify/icons-simple-icons/typescript"
+import tailwindcssIcon from "@iconify/icons-simple-icons/tailwindcss"
 
 const skillsList = [
   {
@@ -27,6 +27,10 @@ const skillsList = [
     icon: javascriptIcon,
   },
   {
+    name: "TypeScript",
+    icon: typescriptIcon,
+  },
+  {
     name: "React",
     icon: reactIcon,
   },
@@ -43,12 +47,8 @@ const skillsList = [
     icon: styledComponents,
   },
   {
-    name: "Material-UI",
-    icon: materialUi,
-  },
-  {
-    name: "GraphQL",
-    icon: graphqlIcon,
+    name: "Tailwind CSS",
+    icon: tailwindcssIcon,
   },
 ]
 

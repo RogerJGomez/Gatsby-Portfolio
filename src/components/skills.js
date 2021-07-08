@@ -6,12 +6,13 @@ import Wrapper from "./styles/Wrapper"
 import UnderLine from "./styles/UnderLine"
 import styled from "styled-components"
 import { Icon } from "@iconify/react"
-import SkillsList from "./skillList"
+import SkillsList from "../skillList"
 
 const SkillIcon = styled(Icon)`
   transition: 0.7s;
+  color: ${props => props.theme.primary};
   &:hover {
-    color: #fff !important;
+    color: #fff;
   }
 `
 const Line = styled(UnderLine)`
@@ -29,18 +30,17 @@ const TechName = styled.h3`
 `
 const SkillWrapper = styled(Wrapper)`
   width: 20%;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
 `
 const Skills = () => {
   return (
     <>
       {SkillsList.map(skill => (
         <SkillWrapper key={skill.name}>
-          <SkillIcon
-            icon={skill.icon}
-            width="100"
-            height="100"
-            style={{ color: "#23FEB2" }}
-          />
+          <SkillIcon icon={skill.icon} width="100" height="100" />
           <TechName>{skill.name}</TechName>
         </SkillWrapper>
       ))}
