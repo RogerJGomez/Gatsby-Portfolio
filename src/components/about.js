@@ -44,7 +44,8 @@ const TextDiv = styled.div`
 `
 const AboutText = styled.p`
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
 `
 export default () => (
   <Container id="about">
@@ -56,15 +57,14 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          Front-end developer from Venezuela. Currently working at an
-          Argentinian marketing agency, Clichead, where I'm in charge of
-          developing and maintaining dozens of websites built with WordPress,
-          for small and medium sized businesses based all over the world.
+          23 year-old Front-end developer. I'm an avid tech enthusiast, trying
+          to keep in touch with current and emerging technologies and aiming to
+          learn and improve my skills every day.
         </AboutText>
         <AboutText>
-          I'm an avid tech enthusiast, trying to keep in touch with current and
-          emerging technologies and aiming to learn and improve my skills every
-          day.
+          Currently i'm working as a react developer in Vascar Solutions, where
+          i'm part of the front-end team. I like teamwork and constantly
+          learning from my co-workers.
         </AboutText>
       </TextDiv>
     </Grid>

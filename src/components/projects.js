@@ -36,6 +36,7 @@ const ProjectTitle = styled.h2`
 const ProjectText = styled.p`
   text-align: justify;
   line-height: 1.5rem;
+  font-size: 1.1rem;
 `
 const Technologies = styled.p`
   text-align: right;
