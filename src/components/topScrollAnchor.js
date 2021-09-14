@@ -20,6 +20,9 @@ const BackTop = styled.a`
   border-width: 0 1.5rem;
   animation: uparrow 0.8s infinite alternate ease-in-out;
   border-bottom: 1.5rem solid ${props => props.theme.primary};
+  &:hover {
+    border-bottom: 1.5rem solid ${props => props.theme.color};
+  }
 `
 const BackTopContainer = styled.div`
   width: 85%;

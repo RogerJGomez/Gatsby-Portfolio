@@ -45,12 +45,7 @@ const Contact = () => {
       {contactData.map(data => (
         <Wrapper key={data.name}>
           <Link href={data.url}>
-            <SkillIcon
-              icon={data.icon}
-              width="90"
-              height="90"
-              style={{ color: "#23FEB2" }}
-            />
+            <SkillIcon icon={data.icon} width="90" height="90" />
           </Link>
           <Name>{data.name}</Name>
         </Wrapper>
