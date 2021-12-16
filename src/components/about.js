@@ -53,7 +53,7 @@ export default () => (
     <Line />
     <Grid>
       <ImageSection>
-        <Avatar draggable={false} src="/rg.jpg" alt="avatar" />
+        <Avatar draggable={false} src="/profile-pic.jpg" alt="avatar" />
       </ImageSection>
       <TextDiv>
         <AboutText>
