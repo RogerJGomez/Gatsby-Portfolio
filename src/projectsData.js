@@ -22,15 +22,15 @@ const Data = [
     techs: "React | Styled Components | GraphQL | Material-UI",
   },
   {
-    id: "gamingstore",
-    name: "Gaming Store App",
+    id: "amiiboshop",
+    name: "Amiibo Shop",
     description: `Create a shopping cart from a list of products in the store, 
         you can keep track of the quantity of items and total amount of the order.`,
     links: [
-      "https://github.com/RogerJGomez/gaming-store-app",
-      "https://gaming-store-app.vercel.app/",
+      "https://github.com/RogerJGomez/amiibo-shop",
+      "https://amiiboshop.netlify.app/",
     ],
-    techs: "React | Redux | Reactstrap",
+    techs: "React | Redux Toolkit | Tailwindcss",
   },
   {
     id: "headlinemusic",
