@@ -53,17 +53,17 @@ export default () => (
     <Line />
     <Grid>
       <ImageSection>
-        <Avatar draggable={false} src="/profile-pic.jpg" alt="avatar" />
+        <Avatar draggable={false} src="/profile-pic.jpeg" alt="avatar" />
       </ImageSection>
       <TextDiv>
         <AboutText>
-          23 year-old Front-end developer. I'm an avid tech enthusiast, trying
+          24 year-old Front-end developer. I'm an avid tech enthusiast, trying
           to keep in touch with current and emerging technologies and aiming to
           learn and improve my skills every day.
         </AboutText>
         <AboutText>
-          Currently i'm working as a react developer in Vascar Solutions, where
-          i'm part of the front-end team. I like teamwork and constantly
+          Currently i'm working as a react developer on Vascar Solutions, where
+          I'm part of the front-end team. I like teamwork and constantly
           learning from my co-workers.
         </AboutText>
       </TextDiv>

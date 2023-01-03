@@ -32,11 +32,31 @@ const ProjectTitle = styled.h2`
   @media (max-width: 768px) {
     text-align: center;
   }
+  animation: fadeIn 1.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 const ProjectText = styled.p`
   text-align: justify;
   line-height: 1.5rem;
   font-size: 1.1rem;
+  animation: fadeIn 1.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 const Technologies = styled.p`
   text-align: right;
@@ -58,21 +78,26 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  animation: fadeIn 1.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 const Links = styled.a`
   font-size: 1.5rem;
   margin: 0 0.5rem;
 `
+const ArrowIcon = styled.i`
+  font-size: 1.7rem;
+`
 const Icon = styled.i`
   font-size: 1.3rem;
-`
-const ArrowsGrid = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-  }
 `
 const ArrowButtons = styled.div`
   transition: 0.3s;
@@ -81,6 +106,19 @@ const ArrowButtons = styled.div`
     transform: scale(1.2);
     color: ${props => props.theme.primary};
   }
+  position: absolute;
+`
+const LeftArrow = styled(ArrowButtons)`
+  left: 0;
+  top: 50%;
+`
+const RightArrow = styled(ArrowButtons)`
+  right: 0;
+  top: 50%;
+`
+const ProjectsGrid = styled(Grid)`
+  padding-left: 60px;
+  padding-right: 60px;
 `
 const Content = () => {
   const [loading, setImgLoaded] = useState(true)
@@ -108,7 +146,7 @@ const Content = () => {
     <Container>
       <Title>Projects</Title>
       <Line />
-      <Grid>
+      <ProjectsGrid>
         <ImageSection>
           <Image
             draggable={false}
@@ -142,15 +180,13 @@ const Content = () => {
             </Links>
           </LinksSection>
         </TextSection>
-      </Grid>
-      <ArrowsGrid>
-        <ArrowButtons onClick={() => changeProject("left")}>
-          <Icon className="fa fa-arrow-left"></Icon>
-        </ArrowButtons>
-        <ArrowButtons onClick={() => changeProject("right")}>
-          <Icon className="fa fa-arrow-right"></Icon>
-        </ArrowButtons>
-      </ArrowsGrid>
+        <LeftArrow onClick={() => changeProject("left")}>
+          <ArrowIcon className="fa fa-arrow-left"></ArrowIcon>
+        </LeftArrow>
+        <RightArrow onClick={() => changeProject("right")}>
+          <ArrowIcon className="fa fa-arrow-right"></ArrowIcon>
+        </RightArrow>
+      </ProjectsGrid>
     </Container>
   )
 }
