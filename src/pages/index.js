@@ -77,7 +77,7 @@ const Index = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Helmet>
-        <title>Roger Gómez | Front-End Developer</title>
+        <title>Roger Gómez | Software Developer</title>
       </Helmet>
       <Home />
       <About />
