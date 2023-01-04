@@ -86,7 +86,7 @@ export default () => (
     </ParticlesDiv>
     <Title>Roger Gómez</Title>
     <Subtitle>Front-End Developer</Subtitle>
-    <Skills>React | HTML | SCSS | Redux</Skills>
+    <Skills>React | GraphQL | Node | Redux</Skills>
     <Arrow onClick={() => scrollTo(document.getElementById("about"))} />
   </Container>
 )
