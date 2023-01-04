@@ -85,7 +85,7 @@ export default () => (
       <Particles height="100vh" params={particlesParams} />
     </ParticlesDiv>
     <Title>Roger Gómez</Title>
-    <Subtitle>Front-End Developer</Subtitle>
+    <Subtitle>Software Developer</Subtitle>
     <Skills>React | GraphQL | Node | Redux</Skills>
     <Arrow onClick={() => scrollTo(document.getElementById("about"))} />
   </Container>

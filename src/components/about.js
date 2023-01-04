@@ -57,13 +57,13 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          24 year-old Front-end developer. I'm an avid tech enthusiast, trying
-          to keep in touch with current and emerging technologies and aiming to
+          24 year-old software developer. I'm an avid tech enthusiast, trying to
+          keep in touch with current and emerging technologies and aiming to
           learn and improve my skills every day.
         </AboutText>
         <AboutText>
           Currently i'm working as a react developer on Vascar Solutions, where
-          I'm part of the front-end team. I like teamwork and constantly
+          I'm part of the development team. I like teamwork and constantly
           learning from my co-workers.
         </AboutText>
       </TextDiv>
