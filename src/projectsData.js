@@ -43,6 +43,17 @@ const Data = [
     ],
     techs: "React | React-MDL",
   },
+  {
+    id: "memorygame",
+    name: "Rick and Morty Memory Game",
+    description: `This memory card game involves players matching cards with images from the "Rick and Morty" TV show. 
+        Flipping two cards at a time, aiming to find matching pairs to earn points. The game tests players' memory and focus.`,
+    links: [
+      "https://github.com/RogerJGomez/Rick-and-Morty-Memory-Game",
+      "https://rick-and-morty-memory-game.netlify.app/",
+    ],
+    techs: "React | TypeScript | GraphQL",
+  },
 ]
 
 export default Data
