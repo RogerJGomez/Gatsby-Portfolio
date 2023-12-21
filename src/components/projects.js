@@ -117,7 +117,7 @@ const RightArrow = styled(ArrowButtons)`
   top: 50%;
 `
 const ProjectsGrid = styled(Grid)`
-  min-height: 345px;
+  min-height: 400px;
   padding-left: 60px;
   padding-right: 60px;
 `
