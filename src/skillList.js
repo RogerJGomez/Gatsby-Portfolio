@@ -1,4 +1,3 @@
-import html5Icon from "@iconify/icons-simple-icons/html5"
 import sassIcon from "@iconify/icons-simple-icons/sass"
 import graphQLIcon from "@iconify/icons-simple-icons/graphql"
 import javascriptIcon from "@iconify/icons-simple-icons/javascript"
@@ -8,6 +7,7 @@ import reduxIcon from "@iconify/icons-simple-icons/redux"
 import nodeDotJs from "@iconify/icons-simple-icons/node-dot-js"
 import typescriptIcon from "@iconify/icons-simple-icons/typescript"
 import tailwindcssIcon from "@iconify/icons-simple-icons/tailwindcss"
+import storybookIcon from "@iconify/icons-simple-icons/storybook"
 
 const skillsList = [
   {
@@ -31,8 +31,8 @@ const skillsList = [
     icon: reduxIcon,
   },
   {
-    name: "HTML",
-    icon: html5Icon,
+    name: "Storybook",
+    icon: storybookIcon,
   },
   {
     name: "SCSS",
