@@ -57,9 +57,9 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          25 year-old software developer. I'm an avid tech enthusiast, trying to
-          keep in touch with current and emerging technologies and aiming to
-          learn and improve my skills every day.
+          Software developer. I'm an avid tech enthusiast, trying to keep in
+          touch with current and emerging technologies and aiming to learn and
+          improve my skills every day.
         </AboutText>
         <AboutText>
           Currently I'm working as a react developer at Vascar Solutions, where
