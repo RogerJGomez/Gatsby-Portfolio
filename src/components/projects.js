@@ -152,7 +152,7 @@ const Content = () => {
           <Image
             draggable={false}
             src={`/${Projects[currentItem].id}.jpg`}
-            className={loading ? "none" : "block"}
+            className={loading && "none"}
             alt="projects"
             onLoad={() => {
               setImgLoaded(false)
