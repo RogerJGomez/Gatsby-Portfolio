@@ -126,6 +126,7 @@ const Content = () => {
   const [currentItem, setCurrentItem] = useState(0)
 
   const changeProject = direction => {
+    setLoading(true)
     direction === "left"
       ? currentItem === 0
         ? setCurrentItem(Projects.length - 1)
