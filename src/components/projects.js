@@ -122,11 +122,10 @@ const ProjectsGrid = styled(Grid)`
   padding-right: 60px;
 `
 const Content = () => {
-  const [loading, setImgLoaded] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [currentItem, setCurrentItem] = useState(0)
 
   const changeProject = direction => {
-    setImgLoaded(true)
     direction === "left"
       ? currentItem === 0
         ? setCurrentItem(Projects.length - 1)
@@ -154,9 +153,8 @@ const Content = () => {
             src={`/${Projects[currentItem].id}.jpg`}
             className={loading && "none"}
             alt="projects"
-            onLoad={() => {
-              setImgLoaded(false)
-            }}
+            onLoadStart={() => setLoading(true)}
+            onLoad={() => setLoading(false)}
           />
           <ScaleLoader size={120} color={"#23FEB2"} loading={loading} />
         </ImageSection>
