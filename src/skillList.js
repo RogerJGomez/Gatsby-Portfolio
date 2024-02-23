@@ -7,7 +7,7 @@ import reduxIcon from "@iconify/icons-simple-icons/redux"
 import nodeDotJs from "@iconify/icons-simple-icons/node-dot-js"
 import typescriptIcon from "@iconify/icons-simple-icons/typescript"
 import tailwindcssIcon from "@iconify/icons-simple-icons/tailwindcss"
-import storybookIcon from "@iconify/icons-simple-icons/storybook"
+import xCodeIcon from "@iconify/icons-simple-icons/xcode"
 
 const skillsList = [
   {
@@ -31,8 +31,8 @@ const skillsList = [
     icon: reduxIcon,
   },
   {
-    name: "Storybook",
-    icon: storybookIcon,
+    name: "Xcode",
+    icon: xCodeIcon,
   },
   {
     name: "SCSS",

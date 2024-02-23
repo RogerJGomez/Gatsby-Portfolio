@@ -57,9 +57,12 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          Software developer. I'm an avid tech enthusiast, trying to keep in
-          touch with current and emerging technologies and aiming to learn and
-          improve my skills every day.
+          I'm a Software Developer with 4+ years of experience in web
+          development. I have knowledge of HTML, CSS, SCSS, ReactJS and
+          TypeScript. I have 3 years of experience with React and TypeScript,
+          and 1.5 years of experience working with React Native. I'm an avid
+          tech enthusiast, trying to keep in touch with current and emerging
+          technologies and aiming to learn and improve my skills every day.
         </AboutText>
         <AboutText>
           Currently I'm working as a react developer at Vascar Solutions, where

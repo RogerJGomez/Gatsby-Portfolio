@@ -32,6 +32,14 @@ const Link = styled.a`
   &:hover {
     cursor: pointer;
   }
+  color: ${props => props.theme.primary};
+  transition: 0.8s;
+  &:hover {
+    color: #fff;
+  }
+`
+const FaIcon = styled.i`
+  font-size: 100px;
 `
 const FixedContainer = styled(Container)`
   margin-bottom: 4rem;
@@ -45,7 +53,11 @@ const Contact = () => {
       {contactData.map(data => (
         <Wrapper key={data.name}>
           <Link href={data.url}>
-            <SkillIcon icon={data.icon} width="90" height="90" />
+            {data.type === "icon" ? (
+              <SkillIcon icon={data.icon} width="90" height="90" />
+            ) : (
+              <FaIcon className={data.icon} width="90" height="90" />
+            )}
           </Link>
           <Name>{data.name}</Name>
         </Wrapper>
