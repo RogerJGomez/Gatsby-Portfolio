@@ -52,7 +52,7 @@ const Contact = () => {
     <>
       {contactData.map(data => (
         <Wrapper key={data.name}>
-          <Link href={data.url}>
+          <Link href={data.url} target="_blank" rel="noopener noreferrer">
             {data.type === "icon" ? (
               <SkillIcon icon={data.icon} width="90" height="90" />
             ) : (

@@ -57,17 +57,16 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          I'm a Software Developer with 4+ years of experience in web
-          development. I have knowledge of HTML, CSS, SCSS, ReactJS and
-          TypeScript. I have 3 years of experience with React and TypeScript,
-          and 1.5 years of experience working with React Native. I'm an avid
-          tech enthusiast, trying to keep in touch with current and emerging
-          technologies and aiming to learn and improve my skills every day.
+          I'm a Software Developer with over 4 years of experience in web and
+          mobile development, mainly using ReactJS/React Native and TypeScript.
+          I'm an avid tech enthusiast, trying to keep in touch with current and
+          emerging technologies and aiming to learn and improve my skills every
+          day.
         </AboutText>
         <AboutText>
-          Currently I'm working as a react developer at Vascar Solutions, where
-          I'm part of the development team. I like teamwork and constantly
-          learning from my co-workers.
+          Currently I'm working as a React developer at Vascar Solutions, where
+          I'm part of the development team. I enjoy problem solving, teamwork
+          and constantly learning from my co-workers.
         </AboutText>
       </TextDiv>
     </Grid>
