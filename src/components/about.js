@@ -57,16 +57,16 @@ export default () => (
       </ImageSection>
       <TextDiv>
         <AboutText>
-          I'm a Software Developer with over 4 years of experience in web and
-          mobile development, mainly using ReactJS/React Native and TypeScript.
-          I'm an avid tech enthusiast, trying to keep in touch with current and
+          Software Developer with over 4 years of experience in web and mobile
+          development, mainly using ReactJS/React Native and TypeScript. I'm an
+          avid tech enthusiast, trying to keep in touch with current and
           emerging technologies and aiming to learn and improve my skills every
           day.
         </AboutText>
         <AboutText>
-          Currently I'm working as a React developer at Vascar Solutions, where
-          I'm part of the development team. I enjoy problem solving, teamwork
-          and constantly learning from my co-workers.
+          Currently working as a React developer at Vascar Solutions, where I'm
+          part of the development team. I enjoy problem solving, teamwork and
+          constantly learning from my co-workers.
         </AboutText>
       </TextDiv>
     </Grid>
